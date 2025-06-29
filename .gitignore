@@ -79,3 +79,20 @@ $RECYCLE.BIN/
 ## 기타 (환경별)
 .env
 *.local
+
+
+
+
+
+
+
+
+
+x64/
+*.exe
+*.obj
+*.ilk
+*.pdb
+*.idb
+*.recipe
+*.txt
