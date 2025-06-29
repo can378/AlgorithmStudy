@@ -1,0 +1,81 @@
+## 기본적인 .NET 관련
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## ASP.NET 관련
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+*.psmdcp
+*.cache
+*.nuget.props
+*.nuget.targets
+packages/
+*.vspscc
+*.vssscc
+*.tmp
+
+# NuGet v3 packages folder
+**/packages/*/tools/**
+
+# Nuke Build
+.nuke/
+
+## Rider 설정 (선택)
+.idea/
+
+## Visual Studio 관련
+.vs/
+*.vc.db
+*.VC.db
+*.vscode/
+
+## ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+## 로그/설정/임시
+*.log
+*.tlog
+*.tmp
+*.bak
+*.orig
+*.cache
+*.vsix
+*.dbmdl
+
+## Publish 관련
+*.Publish.xml
+*.pubxml
+*.publishproj
+
+## 테스트 결과
+TestResults/
+*.coverage
+*.coveragexml
+*.testsettings
+*.vsmdi
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+## Windows 파일
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+## 기타 (환경별)
+.env
+*.local
