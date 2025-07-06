@@ -48,5 +48,11 @@
     <ClCompile Include="bj1389.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="bj1697.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="bj2667.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
