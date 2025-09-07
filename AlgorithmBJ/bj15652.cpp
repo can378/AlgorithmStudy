@@ -3,7 +3,7 @@
 using namespace std;
 int N, M;
 
-bool calculate(int start, vector<int>& arr)
+bool dfs(int start, vector<int>& arr)
 {
     if (arr.size() == M) {
         for (int i = 0; i < M; i++) {
@@ -16,7 +16,7 @@ bool calculate(int start, vector<int>& arr)
     while (num <= N)
     {
         arr.push_back(num);
-        if (calculate(num, arr)) { num++; }
+        if (dfs(num, arr)) { num++; }
         arr.pop_back();
     }
     return true;
@@ -24,7 +24,7 @@ bool calculate(int start, vector<int>& arr)
 int main() {
     cin >> N >> M;
     vector<int>arr;
-    calculate(1, arr);
+    dfs(1, arr);
 
     return 0;
 }
