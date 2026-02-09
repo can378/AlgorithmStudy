@@ -1,0 +1,51 @@
+# ===== Build artifacts =====
+build/
+bin/
+out/
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.lib
+
+# ===== CMake =====
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# ===== Visual Studio =====
+.vs/
+*.vcxproj*
+*.sln
+x64/
+Debug/
+Release/
+
+# ===== VSCode =====
+.vscode/
+
+# ===== OS junk =====
+.DS_Store
+Thumbs.db
+
+# ===== Logs =====
+*.log
+
+# ===== Python venv (¿÷¿∏∏È) =====
+.venv/
+venv/
+
+# ===== Temporary files =====
+*.tmp
+*.swp
+*~
+# Visual Studio project files
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+.vs/
