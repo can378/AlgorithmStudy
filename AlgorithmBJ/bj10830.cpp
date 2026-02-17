@@ -6,13 +6,13 @@ using ll = long long;
 const int MOD = 1000;
 
 vector<vector<ll>> mul(const vector<vector<ll>>& A, const vector<vector<ll>>& B, int N) {
-    vector<vector<ll>> C(N, vector<ll>(N, 0));
+    vector<vector<ll>> C(N, vector<ll>(N, 0));//?
     for (int i = 0; i < N; i++) {
         for (int k = 0; k < N; k++) {
-            ll a = A[i][k] % MOD;
-            if (a == 0) continue;
+            ll a = A[i][k];//?
+            if (a == 0) continue;//?
             for (int j = 0; j < N; j++) {
-                C[i][j] = (C[i][j] + a * (B[k][j] % MOD)) % MOD;
+                C[i][j] = (C[i][j] + a * (B[k][j] % MOD)) % MOD;//?
             }
         }
     }
@@ -26,6 +26,8 @@ vector<vector<ll>> identity(int N) {
 }
 
 int main() {
+
+    //INPUT
     int N;
     long long B;
     cin >> N >> B;
@@ -34,18 +36,21 @@ int main() {
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
             cin >> A[i][j];
-            A[i][j] %= MOD;
+            A[i][j] %= MOD; //애초에 MOD로 나누는건가?
         }
     }
 
+    //CALCULATE
     vector<vector<ll>> res = identity(N);
 
     while (B > 0) {
+        //???
         if (B & 1LL) res = mul(res, A, N);
         A = mul(A, A, N);
         B >>= 1LL;
     }
 
+    //RESULT
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
             cout << (res[i][j] % MOD) << (j + 1 == N ? '\n' : ' ');
